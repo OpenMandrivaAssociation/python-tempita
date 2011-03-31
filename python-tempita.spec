@@ -1,7 +1,7 @@
 %define tarname	Tempita
 %define name	python-tempita
 %define version 0.5
-%define release %mkrel 0.dev
+%define release %mkrel 0.dev.0
 
 Summary:	A very small text templating language
 Name:		%{name}
@@ -9,7 +9,7 @@ Version:	%{version}
 Release:	%{release}
 Source0:	http://pypi.python.org/packages/source/T/%{tarname}/%{tarname}-%{version}dev.tar.gz
 License:	MIT
-Group:		Developers/Python
+Group:		Development/Python
 Url:		http://pythonpaste.org/tempita/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
