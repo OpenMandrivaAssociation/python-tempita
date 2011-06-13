@@ -1,13 +1,13 @@
 %define tarname	Tempita
 %define name	python-tempita
-%define version 0.5
-%define release %mkrel 0.dev.0
+%define version 0.5.1
+%define release %mkrel 1
 
 Summary:	A very small text templating language
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Source0:	http://pypi.python.org/packages/source/T/%{tarname}/%{tarname}-%{version}dev.tar.gz
+Source0:	http://pypi.python.org/packages/source/T/%{tarname}/%{tarname}-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		http://pythonpaste.org/tempita/
@@ -24,7 +24,7 @@ string.Template or % substitution. It's small, it embeds Python in
 strings, and it doesn't do much else.
 
 %prep
-%setup -q -n %{tarname}-%{version}dev
+%setup -q -n %{tarname}-%{version}
 
 %install
 %__rm -rf %{buildroot}
