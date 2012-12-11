@@ -1,17 +1,13 @@
 %define tarname	Tempita
-%define name	python-tempita
-%define version 0.5.1
-%define release %mkrel 1
 
 Summary:	A very small text templating language
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		python-tempita
+Version:	0.5.1
+Release:	2
 Source0:	http://pypi.python.org/packages/source/T/%{tarname}/%{tarname}-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		http://pythonpaste.org/tempita/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 
@@ -27,11 +23,18 @@ strings, and it doesn't do much else.
 %setup -q -n %{tarname}-%{version}
 
 %install
-%__rm -rf %{buildroot}
 PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record=FILE_LIST
-
-%clean
-%__rm -rf %{buildroot}
+sed -i 's/.*egg-info$//' FILE_LIST
 
 %files -f FILE_LIST
-%defattr(-,root,root)
+
+%changelog
+* Mon Jun 13 2011 Lev Givon <lev@mandriva.org> 0.5.1-1mdv2011.0
++ Revision: 684945
+- Update to 0.5.1.
+
+* Thu Mar 31 2011 Lev Givon <lev@mandriva.org> 0.5-0.dev.0
++ Revision: 649453
+- import python-tempita
+
+
