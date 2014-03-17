@@ -2,9 +2,9 @@
 
 Summary:	A very small text templating language
 Name:		python-tempita
-Version:	0.5.1
-Release:	2
-Source0:	http://pypi.python.org/packages/source/T/%{tarname}/%{tarname}-%{version}.tar.gz
+Version:	0.5.2
+Release:	1
+Source0:	https://pypi.python.org/packages/source/T/Tempita/Tempita-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
 Url:		http://pythonpaste.org/tempita/
@@ -36,5 +36,6 @@ sed -i 's/.*egg-info$//' FILE_LIST
 * Thu Mar 31 2011 Lev Givon <lev@mandriva.org> 0.5-0.dev.0
 + Revision: 649453
 - import python-tempita
+
 
 
