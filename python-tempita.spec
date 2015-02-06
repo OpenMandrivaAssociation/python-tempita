@@ -4,7 +4,7 @@ Summary:	A very small text templating language
 
 Name:		python-tempita
 Version:	0.5.3dev
-Release:	2
+Release:	3
 Source0:	http://pypi.python.org/packages/source/T/Tempita/Tempita-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
