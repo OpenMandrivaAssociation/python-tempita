@@ -8,7 +8,7 @@ Release:	3
 Source0:	http://pypi.python.org/packages/source/T/Tempita/Tempita-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
-Url:		http://pythonpaste.org/tempita/
+Url:		https://pythonpaste.org/tempita/
 BuildArch:	noarch
 BuildRequires:	python-setuptools
 
